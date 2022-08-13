@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Container, ListGroup, ListGroupItem, Table } from "reactstrap";
+
+import { Container, Table } from "reactstrap";
+import './Users.css';
 
 const Users = () => {
   const [user, setUser] = useState([]);
@@ -16,29 +18,36 @@ const Users = () => {
 
   return (
     <Container>
-      <Table  border dark key={user.id}>
+      <h1>To do list</h1>
+      <Table   dark >
         <thead>
           <tr>
           <th>id</th>
           <th>Name</th>
           <th>UserName</th>
           <th>Email</th>
+          <th></th>
           </tr>
         </thead>
-        {user.map((user) => (
-          <tbody>
+        {user.map((user, id) => (
+          <tbody key={user.id}>
             <tr>
-              <td>
+              <td >
                 <p>{user.id}</p>
               </td>
+              
               <td>
                 <h2>{user.name}</h2>
               </td>
+          
               <td>
                 <h3>{user.username}</h3>
               </td>
               <td>
                 <p>{user.email} </p>
+              </td>
+              <td>
+              <button>View</button>
               </td>
             </tr>
           </tbody>
