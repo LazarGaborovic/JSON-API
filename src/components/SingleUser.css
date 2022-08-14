@@ -1,0 +1,33 @@
+.information {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.single-user {
+    height: 70vh;
+}
+.user {
+    display: flex;
+   flex-direction: row;
+   text-align: start;
+   width: 100%;
+   height: 80vh;
+   font-family: 'Old Standard TT', serif;
+}
+.information-user {
+    border-radius: 50px;
+    border-radius: 77px;
+    background: #ffffff;
+    box-shadow:  -17px 17px 78px #b0b0b0,
+                 17px -17px 78px #ffffff;
+}
+.card-body {
+    display: flex;
+    flex-direction: column !important;
+    height: 100%;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Old Standard TT', serif;
+}

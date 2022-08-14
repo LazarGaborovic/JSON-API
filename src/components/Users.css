@@ -1,4 +1,11 @@
 .users {
     text-align: start !important;
     display: flex;
+    
+}
+.table {
+    font-family: 'Old Standard TT', serif;
+    background: #ffffff;
+box-shadow:  -17px 17px 78px #b0b0b0,
+             17px -17px 78px #ffffff;
 }

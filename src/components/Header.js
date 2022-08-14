@@ -8,16 +8,15 @@ function Header(args) {
 
   return (
     <div>
-      <Navbar>
-        <Nav className="navigation mx-auto" navbar>
-          <NavItem>
-            <NavLink href="/">Home</NavLink>
+      <Navbar color="light">
+        <Nav  className=" navigation mx-auto" navbar>
+            <NavLink style={{paddingRight:'20%'}} href="/">Home</NavLink>
+          <NavItem >
           </NavItem>
           <NavItem>
             <NavLink href="users">Users</NavLink>
           </NavItem>
         </Nav>
-        <NavbarText>Simple Text</NavbarText>
       </Navbar>
     </div>
   );

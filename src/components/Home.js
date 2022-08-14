@@ -1,9 +1,11 @@
 import React from "react";
 import { Container } from "reactstrap";
+import './Home.css'
 
 const Home = () => {
   return (
-    <Container>
+    <Container className="home">
+   
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -15,6 +17,7 @@ const Home = () => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum.
       </p>
+  
       </Container>
   );
 };
